@@ -1,0 +1,55 @@
+body {
+  margin:0;
+  background:#87ceeb;
+  font-family: Arial;
+  overflow:hidden;
+}
+
+canvas {
+  display:block;
+}
+
+#topUI {
+  position:fixed;
+  top:10px;
+  left:10px;
+  z-index:10;
+  color:white;
+  font-size:18px;
+}
+
+#topUI button {
+  margin-left:10px;
+}
+
+#menu,#shop,#gameover {
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,0.75);
+  color:white;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+}
+
+#shop {
+  display:none;
+}
+
+#gameover {
+  display:none;
+}
+
+#shopItems {
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:10px;
+  max-width:300px;
+}
+
+.shopItem {
+  border:1px solid white;
+  padding:10px;
+  text-align:center;
+}
